@@ -7,15 +7,12 @@ import (
 )
 
 func main() {
-
 	//Insert your code here
-	number := -100
+	number := 17
 	//Hint if a:= ?? ; condition {  }
-
 	oddOrEven(number)
 	noOfDigits(number)
 }
-
 func oddOrEven(number int) {
 	if number%2 == 0 {
 		fmt.Printf("%v"+" is even.\n", number)
@@ -23,7 +20,6 @@ func oddOrEven(number int) {
 		fmt.Printf("%v"+" is odd. \n", number)
 	}
 }
-
 func noOfDigits(number int) {
 	number = int(math.Abs(float64(number)))
 	numToString := strconv.Itoa(number)
